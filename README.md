@@ -17,6 +17,11 @@ grocery-shelf-product-detector/
 ├── requirements.txt
 ├── .gitignore
 │
+├── dataset/                           # not committed (see Data Sources below), notebooks expect it here
+│   ├── ShelfImages/
+│   ├── annotation.txt
+│   └── annotations.csv
+│
 ├── notebooks/
 │   ├── product_detection.ipynb        # model training + evaluation
 │   └── annotation_check.ipynb         # annotation format verification
@@ -35,7 +40,18 @@ grocery-shelf-product-detector/
 - **Annotations**: [gulvarol/grocerydataset](https://github.com/gulvarol/grocerydataset)
 - **Shelf Images**: [ShelfImages on Kaggle](https://www.kaggle.com/datasets/sneha36h/selfimages4)
 
-The dataset itself isn't committed to this repo (research-only license, and it's not needed to run the app - only to retrain). Download it from the links above and place it under `dataset/` if you want to run the training notebook.
+The dataset itself is **not committed to this repo** (research-only license, and it's not needed to run the app - only to retrain). It's listed in `.gitignore`, so it won't show up on GitHub even though it lives in the folder locally.
+
+To run the notebooks, download the dataset from the links above and place it at the repo root as `dataset/`, matching the structure shown above:
+
+```
+dataset/
+├── ShelfImages/
+├── annotation.txt
+└── annotations.csv
+```
+
+Both notebooks reference it as `dataset_root = "../dataset"` (relative to `notebooks/`, one level up to the repo root) - so as long as it's placed at the root like this, no path changes are needed.
 
 ## Installation
 
