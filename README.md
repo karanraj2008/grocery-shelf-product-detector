@@ -103,8 +103,8 @@ Both checks agree on `x, y, w, h, b`, which is what's used for training.
 
 | Metric | Score |
 |---|---|
-| mAP@0.5 | [X] |
-| Precision | [X] |
-| Recall | [X] |
+| mAP@0.5 | [0.9966] |
+| Precision | [0.9827] |
+| Recall | [0.9856] |
 
 (See `notebooks/product_detection.ipynb` for the PR curve and training loss plot.)
