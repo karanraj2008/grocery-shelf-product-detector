@@ -1,0 +1,19 @@
+# virtual environment
+venv/
+
+# dataset - not committed, README explains where to download it
+dataset/
+
+# training artifacts, checkpoints, generated outputs
+work/
+
+# python cache
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
